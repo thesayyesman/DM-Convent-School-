@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+
+
+#photoeffect {
+  width: 110px;
+  height: 110px;
+  border: 3px solid coral;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {border-color: #760C07 ;}
+  50% {box-shadow: 2px 3px 3px blue;}
+}
+
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  background-color: #4C0857;
+  color: white;
+  text-align: center;
+  font-family: "daivd";
+}
+
+
+div.gallery{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  border-radius: 2px;
+  width: 110px;
+  border-color:black; 
+}
+
+div.gallery:hover {
+  border: 3px solid #777;
+  border-color:black;
+}
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto; 
+}
+
+video {
+  width: 30%;
+  height: auto;
+  align:right;
+  border:10px;
+}
+
+
+
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=number], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+.header{
+  background-color: #0A0956;
+  padding: 5px;
+  text-align: center;
+}
+.header h1{
+  font-size: calc(2rem + 1vw);
+} 
+  
+
+@keyframes mymove{ 
+  50% {box-shadow: 2px 3px 3px blue;}
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #333;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #000000 !important;
+    background-color: #FFF3D4 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+
+
+/* Style the footer */
+.footer {
+
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+table, td {
+  border: 3px solid ;
+  border-color:#61020C;
+  
+}
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+  align:centre;
+}
+
+th {
+  height: 50px;
+  border: 3px solid ;
+  border-color:#61020C;
+  width:120px;
+  background-color:#FFE795;
+  
+}
+
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+  
+}
+
+.column.right {
+  width: 25%;
+  
+}
+
+
+
+/* Middle column */
+.column.middle {
+  width: 55%;
+background-image: url("background.png");
+background-attachment: fixed;background-repeat: repeat;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+ 
+	<div class="header">
+ 		<h1>DM CONVENT SCHOOL</h1>
+	</div>
+ 
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#DFDEDC">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><span class="glyphicon glyphicon-search"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+       <li> <a href="index.html" target="_self"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+  		<li><a href="#about">About Us</a></li>
+  		<li><a href="#activities">Activities</a></li>
+	
+	<li><a href="apply.html"  style="background-color:#A60909;color:white;border:1px solid white; border-radius:4px" target="_self"><B>Apply Online </B></a>	</li>
+  		<li><a href="#notice">Notice Board</a></li>
+  		<li><a href="photo.html" target="_self">Photo Gallery</a></li>
+  		<li><a href="#">Newsletter</a></li>
+  		<li><a href="contact.html" target="_self">Contact Us <span class="glyphicon glyphicon-phone-alt"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+	<div class="row">
+	
+	<!-- Column to bootstrap-->
+	<div class="col-md-3">
+		
+	<p style="font-family:Arial Rounded MT Bold;font-size:30px;color:#E8FF00;background-color:#D00000;padding:20px;border:2px solid black;margin:auto;border-radius:4px;text-align:center">School Emblem</p>
+	<img src="logo.jpg" style="max-width:100%;align:center;height:auto;border-radius:4px;border:3px solid">
+	</div>
+ 
+
+
+	<!-- Column to bootstrap-->
+	<div class="col-md-7" style="padding:45px">
+
+		<marquee><p style="color: #E51A1A;font-size=20px;background-color:#E9E248;width:fit-content;padding:0.4rem" > <B>Admissions are open for all classes. <a href="apply.html"> ENROLL NOW..</a></B></p><br></marquee>
+
+		<img src="top.jpg" width=680px height=300px 		style="border:2px solid;border-radius:4px;max-width:100%;height:auto">
+		<HR><br>
+
+
+
+
+	<h2 id="about" >About Us</h2>
+<p style="font-family:Arial Unicode MS;font-size:35px"><B> Our Mission</B></p>
+
+
+		<p style="font-family:Arial Rounded MT Bold">Our school's mission is to inculcate the values of leadership, the common core, and relationships for life in our students. Our mission is to provide a safe, disciplined learning environment that empowers all students to develop their full potential. We feel strongly about helping to build leaders that have the ability to succeed in whatever endeavor they undertake. Winning is not always the measure of success. Our students understand the "Win, win" philosophy and use it in their daily life. Common standards keeps us focused on learning appropriate content and preparing our students to graduate. Last but just as importantly, setting examples for our students of meaningful and lasting relationships will go with them throughout their lifetime.</P><br>
+
+<p style="font-family:Arial Unicode MS;font-size:35px"><B> Our Vision</B></p>
+
+<p style="font-family:Arial Rounded MT Bold">Our vision is to develop well rounded, confident and responsible individuals who aspire to achieve their full potential. We will do this by providing a welcoming, happy, safe, and supportive learning environment in which everyone is equal and all achievements are celebrated.We want a community where all children feel loved, respected and encouraged to develop to their fullest potential.<br>
+Our Kindergarten aims to provide a meaningful child centered, play based curriculum that builds life skills, independence, confidence and resilience to support each child in achieving their potential and to make a smooth transition to school and society itself.</p><br>
+
+	<br><HR><br>
+	
+
+
+
+
+
+	<h2 id="activities">Activities</h2>
+
+		<p style="font-family:Arial Rounded MT Bold">The School firmly believes that textual studies are only but a part of the full development of a child and therefore provides a spectrum of in house activities through its program of panchmukhi shiksha.Student activities are an integral part of the school program. Qualified students must be able to participate in any activity without regard to race, religion, national origin, disability, or sex.<br>
+<B>Types of Student Activities</B><br>
+<ul>
+	<li>Science Activities.</li>
+	<li>Reading Activities.</li>
+	<li>Math Activities.</li>
+	<li>English Activities.</li>
+	<li>Critical Thinking Activities.</li>
+	<li>Craft Activities.</li>
+	<li>Art Activities.</li>
+	<li>Classroom Activities.</li>
+</ul>
+
+<B><U>Hobby Classes</U></B><br><br>
+
+We cater to the specific hobby related needs by conducting hobby classes in the evening so that every child is able to participate in the field of choice to her heart content. She can develop her ability through a variety of activities such as Horse riding, Martial art, Manipuri dance, Judo Karate and Swimming.<br><br>
+
+<B><U>Morning Assembly</U> </B><br><br>
+
+A few minutes are spared in the morning for assembly every day and students, by rotation speak, thought for the day as well as the important news of the day and impart some information about educational facts and recent discoveries. <br><br>
+
+<B><U>Festivals and Fairs</B></U><br><br>
+
+As far as festivals are concerned students celebrate all the national festivals like Gandhi Jayanti, Independence Day, Republic day, Teacher's Day, Guru Nanak Jayanti and so on with great enthusiasm. Raksha Bandhan is celebrated by having  on the spot Rakhi making competition.<br><br>
+
+<B><U>Games and Sports</B></U><br><br>
+Sports is being enthusiastically persuaded at Banasthali Vidyapith. Excellent sports facilities and the services of dedicated coaches in different disciplines have made the school sports contingent a formidable force on the play field.<br>
+The programmes of physical education provide opportunities to participate in various competitions inside the campus as intramurals and also at the national/state/district as extra-mural competition. <br><br>
+
+</P><br>
+<hr>
+
+<br>
+
+
+
+
+
+	<h2 id="notice">Notice Board</h2>
+
+<table>
+	<tr>
+		<th>Date</th>
+		<th>Notice</th>
+		
+	</tr>
+	
+	<tr>
+ 		<td>18-08-2020</td>
+		<td><p>1. For Re-exam Time Schedule please check Examination Corner.<br> 2. For Class time table for live sessions for classes Nursery to 3 please check class timetable for live sessions.</p></td>
+		
+	</tr>
+	<tr>
+ 		<td>10-04-2020</td>
+		<td><p>The next session for all the classes will commence soon.</p></td>
+		
+	</tr>
+</table>
+<br><br>
+<hr>
+
+<br>
+
+
+
+
+
+
+	
+
+
+		<a href="index.html" target="_self" style="background-color: #8A1711;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  display: inline-block;">Move to top
+		</a>
+
+
+
+
+
+<br><br><br>
+	</div>
+  	
+	
+	<!-- Column to bootstrap-->
+	<div class="col-lg-2 col-md-4" style="background-color:#E7E7E7;padding:20px">
+	 <h2>COVID-19 Advisory</h2>
+
+		<p style="font-family:Arial Rounded MT Bold"><B>Protect yourself and others from COVID-19</B><br>
+
+If COVID-19 is spreading in your community, stay safe by taking some simple precautions, such as physical distancing, wearing a mask, keeping rooms well ventilated, avoiding crowds, cleaning your hands, and coughing into a bent elbow or tissue. Check local advice where you live and work. Do it all!<br><hr>
+<ul>
+	<li><B><U>Basics of hygiene</U> </B></li>
+	<li>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.</li>
+	<li>Avoid touching your eyes, nose and mouth. </li>
+	<li>Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze.</li>
+	<li>Clean and disinfect surfaces frequently especially those which are regularly touched, such as door handles, faucets and phone screens.</li>
+
+	<br>	
+
+	<li><B><U>What to do if you feel unwell</U></B></li>
+	<li>Know the full range of symptoms of COVID-19.</li>
+	<li>Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever</li>
+	<li>If you have a fever, cough and difficulty breathing, seek medical attention immediately. Call by telephone first, if you can and follow the directions of your local health authority.</li>
+	<li>Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities.</li>
+	<br>
+</ul>
+	<p>For More information:- <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank">Click Here</a></p>
+		</p>				
+
+	</div>
+
+
+ 
+	</div>
+
+
+
+
+<br><br><br>
+<div style="background-color:#DADADA">
+	<p>. </p>
+</div>
+
+
+
+	<div class="footer">
+
+  		<table   align="center">
+		<tr>
+
+			<td><a href="http://rajeduboard.rajasthan.gov.in/" target="_blank"><img src="rbse.jpg" width=150px height=100px> </a></td>
+			<td><a href="https://www.iayp.in/?gclid=CjwKCAjwiOv7BRBREiwAXHbv3LOF7lsyxl6j8SEDFrvRtNcxKTrQUSWVP4S6DlGq0fgMGimkKyHhRxoCNNsQAvD_BwE" target="_blank"><img src="award.png" width=150px height=100px></a></td>
+			<td><a href="https://www.nacacnet.org/" target="_blank"><img src="nacac.png" width=150px height=100px></a></td>
+			<td><a href="https://www.ted.com/tedx/events/27632"target="_blank"><img src="tedx.png" width=150px height=100px></a></td>
+			<td><a href="https://www.mhrd.gov.in/#main-content"   target="_blank"><img src="mhrd.png" width=150px height=100px></a></td>
+			<td><a href="https://www.startupindia.gov.in/" target="_blank"><img src="startup.jpg" width=150px height=100px></a></td>
+	
+		</tr>
+
+
+		</table>
+	</div>
+<hr>
+<br>
+
+ <div style="background-color:#111230; color:white">
+	<p  style="text-align:center">&copy; 2020 - DM  Convent School <br>  Website developed and maintained by: Manu Sharma</p>
+ </div>
+
+
+</body>
+</html>
